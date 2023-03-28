@@ -1,0 +1,384 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap");
+
+.primary-font {
+  font-family: "Volkhov", serif;
+}
+
+.smoth-scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(112, 112, 112, 0.3);
+  background-color: #f5f5f5;
+}
+
+.smoth-scroll::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+.smoth-scroll::-webkit-scrollbar-thumb {
+  background-color: #bbbbbb;
+  border: 2px solid #bdbdbd;
+}
+
+h1 {
+  font-size: 80px !important;
+  line-height: 106px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 50px !important;
+  font-weight: bold;
+  line-height: 80.5px;
+}
+h3 {
+  font-size: 40px;
+  color: #5e6282;
+  font-weight: 700;
+}
+h4 {
+  font-size: 20px !important;
+  line-height: 27px;
+  font-weight: 600;
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5e6282;
+  line-height: 30px;
+}
+.line-m {
+  line-height: 20px !important;
+  font-weight: 400;
+}
+.between {
+  display: flex;
+  justify-content: space-between;
+}
+.text-primary {
+  color: #5477f3 !important;
+}
+.bg-primary {
+  background-color: #5477f3 !important;
+}
+.text-scondary {
+  color: #f1a501 !important;
+}
+.bg-scondary {
+  background-color: #f1a501 !important;
+}
+.span-bg {
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-right: 7%;
+  padding-left: 3%;
+  margin-left: -3%;
+}
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.child-img {
+  width: 150px;
+  margin: 0px 10px;
+}
+.bg-fit {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fit {
+  object-fit: cover;
+  object-position: center;
+}
+.InfiniteCarouselSlide {
+  padding: 1.5rem !important;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+  border: none !important;
+}
+.t-div {
+  padding-left: 5rem;
+}
+.input-2 {
+  background: #5350b3;
+  padding: 0.8rem;
+  border-radius: 7px;
+  margin-bottom: 12px;
+}
+.pointer {
+  cursor: pointer;
+}
+.b-t {
+  border-top: 1px solid rgb(196, 196, 196);
+}
+
+.container {
+  padding-bottom: 2rem !important;
+}
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 35px !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .between {
+    display: block;
+  }
+
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 25px !important;
+  }
+  p {
+    font-size: 12px !important;
+  }
+  button {
+    font-size: 12px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 20px !important;
+  }
+}
+.shap-hover {
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 10px;
+  padding-bottom: 20px;
+  transition: all 0.5s;
+}
+.shap-hover:hover {
+  box-shadow: rgb(0 0 0 / 20%) 0px 18px 84px -30px;
+}
+.book-after {
+  height: 6em;
+  /* border-left: 1px dotted; */
+}
+.slick-slide {
+  opacity: 0.5; /* set default opacity for all slides */
+  transition: opacity 0.2s ease-in-out; /* add a transition effect */
+}
+
+.slick-active {
+  opacity: 1; /* set the active slide to 100% opacity */
+}
+
+.slick-slide {
+  position: relative;
+  z-index: 1; /* make sure all slides are above the next slide */
+}
+
+.slick-active {
+  z-index: 2; /* set the active slide to a higher z-index */
+}
+.slick-prev {
+  left: 107% !important;
+  top: 65% !important;
+}
+.slick-prev::before,
+.slick-next::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  background-image: url("./assest/arrow-b.png");
+  color: transparent !important;
+  background-size: cover;
+  background-color: transparent !important; /* set the background color of the arrows */
+}
+
+.slick-next::before {
+  content: "";
+  display: inline-block;
+
+  width: 36px;
+  height: 20px;
+  background-image: url("./assest/arrow-t.png");
+  color: transparent !important;
+  background-size: cover;
+  background-color: transparent !important; /* set the background color of the arrows */
+}
+.slick-list {
+  height: 360px !important;
+}
+.slick-next {
+  right: -70px !important;
+  top: 40% !important;
+}
+
+.join-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f4fe;
+  height: 40vh;
+  border-top-left-radius: 10rem;
+}
+.sign-span {
+  background-position-x: 40px;
+  padding-right: 3% !important;
+}
+.signup-span {
+  background-position-x: 40px;
+  padding-right: 3% !important;
+  background-position-y: 45px !important;
+}
+
+.MuiInputAdornment-positionEnd-20 {
+  margin: auto !important;
+}
+
+.input-bg {
+  background-color: #e8f0fe !important;
+}
+
+.MuiInput-underline:after {
+  display: none !important;
+  border-bottom: none !important;
+}
+.MuiInput-underline::before {
+  display: none !important;
+  border-bottom: none !important;
+}
+.myTextField .MuiInput-underline::before {
+  border-bottom-color: rgb(212, 28, 182) !important;
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: transparent !important;
+  border-width: 2px;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: transparent !important;
+}
+.MuiInput-underline-9:before {
+  border-bottom: none !important;
+}
+
+.MuiInput-inputType-16 {
+  height: 3.1875em !important;
+  padding-left: 13px !important;
+}
+.MuiInput-input-13 {
+  height: 3.1875em !important;
+  padding-left: 13px !important;
+}
+.term .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  width: 900px !important;
+  max-width: 900px !important;
+  border-radius: 30px;
+  padding: 2%;
+}
+.term1 .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  width: 600px !important;
+  max-width: 600px !important;
+  border-radius: 30px;
+  padding: 2%;
+}
+textarea {
+  border: none !important;
+  outline: none !important;
+  width: 100%;
+  background-color: transparent !important;
+}
+
+.flex-container {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.right-m {
+  top: -5%;
+  right: -3%;
+}
+.css-jue3ft-MuiRating-root {
+  font-size: 4rem !important;
+}
+
+@media only screen and (max-width: 1440px) {
+  .slick-next {
+    right: -25px !important;
+  }
+  .slick-prev {
+    left: 100% !important;
+  }
+  .right-m {
+    top: 0px !important;
+    right: 3%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  h1 {
+    font-size: 64px !important;
+    line-height: 82px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .hide-m {
+    display: none !important;
+  }
+  .testimonial-m {
+    width: 700px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 30px;
+  }
+  .testimonial-m {
+    width: 450px !important;
+  }
+  h1 {
+    font-size: 50px !important;
+    line-height: 70px;
+  }
+  .join-div {
+    border-top-left-radius: 0rem;
+  }
+  .right-m {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+}
+@media only screen and (max-width: 500px) {
+  .testimonial-m {
+    width: 360px !important;
+  }
+  h1 {
+    font-size: 50px !important;
+    line-height: 70px;
+  }
+  .join-div {
+    border-top-left-radius: 0rem;
+  }
+  .right-m {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .testimonial-m {
+    width: 300px !important;
+  }
+}
